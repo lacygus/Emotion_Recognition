@@ -27,7 +27,22 @@ Two concept sets were used: (1) the seven expression categories as above, and (2
     - number of concepts: 27
 
 ## Methods
-In our project, we employed a comprehensive approach to understand and interpret facial expressions through machine learning models, focusing on the Facial Expression Recognition 2013 (FER-2013) dataset. The methodology involved several key steps, beginning with the conversion of existing models to formats compatible with advanced analysis tools such as PyTorch and ONNX. This allowed for the seamless integration of models with interpretability techniques like CLIP-Dissect and Concept-Based Model (CBM) analysis.
+
+In our project, we employed a comprehensive approach to understand and interpret facial expressions through machine learning models, focusing on the Facial Expression Recognition 2013 (FER-2013) dataset. The methodology involved several key steps, beginning with obtaining a baseline model, analyzing important features for emotion through dissection, and modifying the network. The baseline model we used is a VGGNet architecture trained on FER2013, with a test accuracy of 69.42%. We seek to analyze the features being used in the model to understand how the model works. Our goal with modifying the network is to improve accuracy.
+
+ Project Procedure I: Emotion Feature Analysis
+
+1. Generate and label our new concept set with GPT4
+2. Apply CLIP-Dissect with same d-probe and probing images, but with   the new concept set
+3. Taking only the results that were predicted accurate, count the sampled concepts that were used
+4. Visualize and analyze the neurons/concepts
+
+ Project Procedure II: Network Dissection and Modification 
+
+1. As part of the network dissection performed in procedure I, we obtain the max similarity value between each neuron activation and concept label. 
+2. We choose the similarity cutoff tau = 0 to determine the set of interpretable neurons. We then choose the layer with the most interpretable neurons to modify.
+3. To modify the layer, we multiply the interpretable neuron weights by 1.5 and divide the uninterpretable neuron weights by 1.5.
+4. After modifying the layer weights, we re-evaluate the model on the test data.
 
 ## Results
 
