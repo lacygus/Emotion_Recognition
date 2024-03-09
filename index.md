@@ -63,6 +63,9 @@ In our project, we employed a comprehensive approach to understand and interpret
 
 We analyzed neurons in the lin2 layer of a VGG-like network to distinguish between interpretable and uninterpretable ones based on the sum of absolute values of their weights. Using 0.0 as the similarity cutoff, we identified neurons above this threshold as interpretable and those below as uninterpretable. We modified the weights by multiplying those of interpretable neurons and dividing those of uninterpretable neurons by a factor of 1.5. This modification resulted in a slight increase in model accuracy (about 0.21%), demonstrating that such targeted weight adjustments can potentially influence model performance.
 
+Example Predicted Images:
+![Example Predicted Neuron](images/predicted-imgs.png)
+
 #### Part II:  Emotion Feature Analysis with Neural Network Dissection
 
 We were able to use VGGnet and apply CLIP-dissect. After the application, we generated another concept set that includes more detailed facial expression for further analysis of how our machine makes its decision. Taking a portion of sample from dissected lin2 layer with 4096 neurons, we picked only the facial expression that were predicted correct and get results as the visualization below.  
