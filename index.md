@@ -68,6 +68,9 @@ We analyzed neurons in the lin2 layer of a VGG-like network to distinguish betwe
 Example Predicted Images:
 ![Example Predicted Neuron](images/predicted-imgs.png)
 
+Layer Accuracies:
+![Accuracy for each Layer](images/layer-accuracy.png)
+
 #### Part II:  Emotion Feature Analysis with Neural Network Dissection
 
 We were able to use VGGnet and apply CLIP-dissect. After the application, we generated another concept set that includes more detailed facial expression for further analysis of how our machine makes its decision. Taking a portion of sample from dissected lin2 layer with 4096 neurons, we picked only the facial expression that were predicted correct and get results as the visualization below.  
