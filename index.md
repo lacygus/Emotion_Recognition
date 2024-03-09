@@ -15,6 +15,8 @@ Our project looks at how interpreting neural networks can make image emotion rec
 ## Data
 
 ### Probing Dataset
+The FER2013 dataset is a comprehensive collection of facial expression images, pivotal for advancing research in emotion recognition. This dataset comprises approximately 30,000 grayscale images, each standardized to a resolution of 48x48 pixels. These images encapsulate the complexity and variance inherent in human facial expressions, making it an invaluable resource for training and evaluating machine learning models in the field of computer vision and affective computing.
+
 - FER2013
   - Description: The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centered and occupies about the same amount of space in each image.
   - Task: Categorize each face based on the emotion shown in the facial expression into
