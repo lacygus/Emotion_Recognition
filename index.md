@@ -31,7 +31,7 @@ Two concept sets were used: (1) the seven expression categories as above, and (2
 In our project, we employed a comprehensive approach to understand and interpret facial expressions through machine learning models, focusing on the Facial Expression Recognition 2013 (FER-2013) dataset. The methodology involved several key steps, beginning with obtaining a baseline model, analyzing important features for emotion through dissection, and modifying the network. The baseline model we used is a VGGNet architecture trained on FER2013, with a test accuracy of 69.42%. We seek to analyze the features being used in the model to understand how the model works. Our goal with modifying the network is to improve accuracy.
 
 #### Model Architecture (VGGnet)
-![VGGNet Architecture](EmotionRecognition/images/vgg-architecture.png)
+![VGGNet Architecture](images/vgg-architecture.png)
 
  Project Procedure I: Emotion Feature Analysis
 
