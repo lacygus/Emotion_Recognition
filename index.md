@@ -8,7 +8,10 @@
 
 ## Introduction
 
-Our project looks at how interpreting neural networks can make image emotion recognition systems better. Currently, the best method to classify emotions based on an image is with deep learning, a rapidly growing field with state of the art performance in visual tasks. However, it is unclear what is happening within deep learning models that leads to such strong performance, often being nicknamed a “black box.”  With the development of CLIP-Dissect, which is a tool to easily interpret the role of deep neural network neurons, we seek to use it to understand how a model classifies emotions, what biases there are, and how to improve it
+Our project looks at how interpreting neural networks can make image emotion recognition systems better. Currently, the best method to classify emotions based on an image is with deep learning, a rapidly growing field with state of the art performance in visual tasks. However, it is unclear what is happening within deep learning models that leads to such strong performance, often being nicknamed a “black box.” We aim to extend Dr. Weng's project for emotion detection by leveraging CLIP-Dissect's ability to annotate internal neurons with ambiguous concepts.  With the development of CLIP-Dissect, which can easily interpret the role of deep neural network neurons, we seek to understand how a model classifies emotions, what biases there are, and how to improve it
+
+#### What exactly is CLIP-Dissect?
+Technique to analyze neurons in intermediate layers inside a vision network. It inputs a deep neural network (DNN) to be dissected/probed, a set of probing images, and a set of concepts, and outputs neuron labels. 
 
 
 
