@@ -12,6 +12,7 @@ Our project looks at how interpreting neural networks can make image emotion rec
 
 #### What exactly is CLIP-Dissect?
 Technique to analyze neurons in intermediate layers inside a vision network. It inputs a deep neural network (DNN) to be dissected/probed, a set of probing images, and a set of concepts, and outputs neuron labels. 
+![CLIP-Dissect Process](images/clip-dissect.png)
 
 
 
