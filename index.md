@@ -30,7 +30,7 @@ The FER2013 dataset is a comprehensive collection of facial expression images, p
   - Link: [FER2013](https://www.kaggle.com/datasets/msambare/fer2013)
 
 ### Concept Sets
-Two concept sets were used: (1) the seven expression categories as above, and (2) a facial expression emotion concept set with twenty seven concepts created with GPT-4 and based on those seven emotions.
+Two concept sets were used: (1) the seven expression categories as above, and (2) a facial expression emotion concept set with twenty five concepts created with GPT-4 and based on those seven emotions.
 
 - FER2013 Classes
     - number of concepts: 7
