@@ -36,7 +36,7 @@ Two concept sets were used: (1) the seven expression categories as above, and (2
     - number of concepts: 7
  
 - Facial Expressions
-    - number of concepts: 27
+    - number of concepts: 25
 
 
 
