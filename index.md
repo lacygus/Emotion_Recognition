@@ -96,3 +96,7 @@ Using CLIP-Dissect we identified which neurons played key roles in predicting im
 
 
 ## References
+
+**Khaireddin, Yousif, and Zhuofa Chen.** 2021. “Facial emotion recognition: State of the art performance on FER2013.” arXiv preprint arXiv:2105.03588
+**Oikarinen, Tuomas, and Tsui-Wei Weng.** 2022. “Clip-dissect: Automatic description of neuron representations in deep vision networks.” arXiv preprint arXiv:2204.10965
+
