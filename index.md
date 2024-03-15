@@ -11,9 +11,11 @@
 Our project looks at how interpreting neural networks can make image emotion recognition systems better. Currently, the best method to classify emotions based on an image is with deep learning, a rapidly growing field with state of the art performance in visual tasks. However, it is unclear what is happening within deep learning models that leads to such strong performance, often being nicknamed a “black box.” We aim to extend Dr. Weng's project for emotion detection by leveraging CLIP-Dissect's ability to annotate internal neurons with ambiguous concepts.  With the development of CLIP-Dissect, which can easily interpret the role of deep neural network neurons, we seek to understand how a model classifies emotions, what biases there are, and how to improve it
 
 #### What exactly is CLIP-Dissect?
-Technique to analyze neurons in intermediate layers inside a vision network. It inputs a deep neural network (DNN) to be dissected/probed, a set of probing images, and a set of concepts, and outputs neuron labels. 
+CLIP-Dissect (Oikarinen and Weng 2022) is a method derived from the principles of Network Dissect but utilizes OpenAI's CLIP model, which is designed to concurrently process and comprehend both image and text information through extensive contrastive learning techniques. The fundamental aim of CLIP-Dissect is to delve into and elucidate how vision networks function internally, specifically examining how its individual neurons react to input images (probing dataset). This exploration uncovers the 'hidden neurons' within the model that activate in response to the images. This analytical technique is crucial for gaining a deeper understanding of the complex mechanisms of deep neural networks, showing how it embodies and conveys a wide variety of abstract ideas. We can look for neurons that respond to these abstract ideas with a concept set. By using CLIP-Dissect, researchers can highlight function of individual neurons, helping to form better trust and a better interpretation.
 
 ![CLIP-Dissect Process](images/clip-dissect.png)
+
+It inputs a deep neural network (DNN) to be dissected/probed, a set of probing images, and a set of concepts, and outputs neuron labels. 
 
 
 
