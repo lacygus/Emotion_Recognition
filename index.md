@@ -79,6 +79,8 @@ Layer Accuracies:
 
 We were able to use VGGnet and apply CLIP-dissect. After the application, we generated another concept set that includes more detailed facial expression for further analysis of how our machine makes its decision. Taking a portion of sample from dissected lin2 layer with 4096 neurons, we picked only the facial expression that were predicted correct and get results as the visualization below.  
 
+![Distribution of Facial Emotions Concept Set](images/face-expressions.png)
+
 
 
 ## Discussion
@@ -98,5 +100,6 @@ Using CLIP-Dissect we identified which neurons played key roles in predicting im
 ## References
 
 **Khaireddin, Yousif, and Zhuofa Chen.** 2021. “Facial emotion recognition: State of the art performance on FER2013.” arXiv preprint arXiv:2105.03588
+
 **Oikarinen, Tuomas, and Tsui-Wei Weng.** 2022. “Clip-dissect: Automatic description of neuron representations in deep vision networks.” arXiv preprint arXiv:2204.10965
 
