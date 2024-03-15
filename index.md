@@ -12,6 +12,7 @@ Our project looks at how interpreting neural networks can make image emotion rec
 
 #### What exactly is CLIP-Dissect?
 Technique to analyze neurons in intermediate layers inside a vision network. It inputs a deep neural network (DNN) to be dissected/probed, a set of probing images, and a set of concepts, and outputs neuron labels. 
+
 ![CLIP-Dissect Process](images/clip-dissect.png)
 
 
@@ -42,7 +43,7 @@ Two concept sets were used: (1) the seven expression categories as above, and (2
 
 ## Methods
 
-In our project, we employed a comprehensive approach to understand and interpret facial expressions through machine learning models, focusing on the Facial Expression Recognition 2013 (FER-2013) dataset. The methodology involved several key steps, beginning with obtaining a baseline model, analyzing important features for emotion through dissection, and modifying the network. The baseline model we used is a VGGNet architecture trained on FER2013, with a test accuracy of 69.42%. We seek to analyze the features being used in the model to understand how the model works. Our goal with modifying the network is to improve accuracy.
+In our project, we employed a comprehensive approach to understand and interpret facial expressions through machine learning models, focusing on the Facial Expression Recognition 2013 (FER-2013) dataset. The methodology involved several key steps, beginning with obtaining a baseline model, analyzing important features for emotion through dissection, and modifying the network. The baseline model we used is a VGGNet architecture trained on FER2013 (Khaireddin and Chen 2021), with a test accuracy of 69.42%. We seek to analyze the features being used in the model to understand how the model works. Our goal with modifying the network is to improve accuracy.
 
 #### Model Architecture (VGGnet)
 ![VGGNet Architecture](images/vgg-architecture.png)
@@ -65,7 +66,13 @@ In our project, we employed a comprehensive approach to understand and interpret
 
 ## Results
 
-#### Part I: Neuron Dissection and Modification
+#### Part I:  Emotion Feature Analysis with Neural Network Dissection
+
+We were able to use VGGnet and apply CLIP-Dissect. After the application, we generated another concept set that includes more detailed facial expression for further analysis of how our model makes its decision. Taking a sample from the dissected lin2 layer with 4096 neurons, we picked only the facial expression that were predicted correct and got results as shown in the visualization below.  
+
+![Distribution of Facial Emotions Concept Set](images/face-expressions.png)
+
+#### Part II: Neuron Dissection and Modification
 
 We analyzed neurons in the lin2 layer of a VGG-like network to distinguish between interpretable and uninterpretable ones based on the sum of absolute values of their weights. Using 0.0 as the similarity cutoff, we identified neurons above this threshold as interpretable and those below as uninterpretable. We modified the weights by multiplying those of interpretable neurons and dividing those of uninterpretable neurons by a factor of 1.5. This modification resulted in a slight increase in model accuracy (about 0.21%), demonstrating that such targeted weight adjustments can potentially influence model performance.
 
@@ -74,12 +81,6 @@ Example Predicted Images:
 
 Layer Accuracies:
 ![Accuracy for each Layer](images/layer-accuracy.png)
-
-#### Part II:  Emotion Feature Analysis with Neural Network Dissection
-
-We were able to use VGGnet and apply CLIP-dissect. After the application, we generated another concept set that includes more detailed facial expression for further analysis of how our machine makes its decision. Taking a portion of sample from dissected lin2 layer with 4096 neurons, we picked only the facial expression that were predicted correct and get results as the visualization below.  
-
-![Distribution of Facial Emotions Concept Set](images/face-expressions.png)
 
 
 
