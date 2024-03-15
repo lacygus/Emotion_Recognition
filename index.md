@@ -100,6 +100,11 @@ Using CLIP-Dissect we identified which neurons played key roles in predicting im
 
 
 
+## Replicate Our Work
+View our [report](report.pdf) and [code](https://github.com/kier0813/emotion_clip)!
+
+
+
 ## References
 
 **Khaireddin, Yousif, and Zhuofa Chen.** 2021. “Facial emotion recognition: State of the art performance on FER2013.” arXiv preprint arXiv:2105.03588
